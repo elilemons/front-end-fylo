@@ -7,6 +7,7 @@ Table of Contents
 02 - Typography
 03 - Buttons
 04 - Helpers
+05 - Navbar
 
 **/
 
@@ -39,11 +40,22 @@ body {
   display: flex;
   flex-direction: column;
 }
-.content-wrapper {
+.col {
+  display: flex;
+  flex-direction: column;
+}
+.flex-container.center-align-h {
   align-items: center;
+}
+.content-wrapper {
+  align-items: stretch;
 }
 .full-width {
   width: 100%;
+}
+nav, section, footer {
+  padding-left: 1.5em;
+  padding-right: 1.5em;
 }
 /* 01 - End Layout */
 /* 02 - Typography */
@@ -56,6 +68,9 @@ strong { font-weight: var(--font-weight-bold); }
 h1, h2, h3, h4, h5, h6 { 
   font-family: var(--font-family-heading); 
   font-weight: var(--font-weight-bold);
+}
+.text-center {
+  text-align: center;
 }
 .text-white {
   color: var(--white);
@@ -75,3 +90,60 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 50%;
 }
 /* 04 - End Helpers */
+/* 05 - Navbar */
+.navbar, .nav-items {
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-item {
+  padding-inline-start: 2.5em;
+}
+.logo > a > img {
+  max-width: 20vw;
+}
+/* 05 - End Navbar */
+/* 06 - Content */ 
+.feature {
+  text-align: center;
+}
+.testimonials {
+  background-color: var(--dark-blue-600);
+  padding-bottom: 150px;
+}
+.testimonial::before {
+  content: '"';
+}
+.profile-card {
+  display: flex;
+}
+.profile-card > .circle {
+  width: 25px;
+  height: 25px;
+}
+.sign-up {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.sign-up-form {
+  border-radius: 20px;
+  background-color: var(--dark-blue-400);
+  display: flex;
+  align-items: center;
+  position: absolute;
+  /* temp */ padding: 3em;
+}
+.sign-up-form > fieldset { 
+  display: flex;
+  flex-direction: column;
+}
+.footer {
+  background-color: var(--dark-blue-700);
+  padding-top: 150px;
+}
+.footer-cell {
+  display: flex;
+  flex-direction: row;
+}

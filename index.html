@@ -12,7 +12,7 @@
 </head>
 <body>
   <!-- Navbar -->
-  <nav class="navbar">
+  <nav class="navbar flex-container">
     <!-- Logo -->
     <div class="logo">
       <a href="#">
@@ -21,7 +21,7 @@
       </a>
     </div><!-- ./ Logo -->
     <!-- Nav Items -->
-    <div class="nav-items">
+    <div class="nav-items flex-container">
       <div class="nav-item">
         <a href="#features">
           Features
@@ -39,14 +39,14 @@
   <!-- Content Wrapper -->
   <main class="content-wrapper flex-container">
     <!-- Hero -->
-    <section class="hero flex-container">
+    <section class="hero flex-container center-align-h">
       <img alt="All your files in one secure location"
            class="full-width"
            src="/images/illustration-intro.png" />
-      <h1>
+      <h1 class="text-center">
         All your files in one secre location, accessible anywhere.
       </h1>
-      <p>
+      <p class="text-center">
           Fylo stores all your most important files in one secure location. Access them wherever 
           you need, share and collaborate with friends family, and co-workers.
       </p>
@@ -60,7 +60,7 @@
     <!-- Features -->
     <section class="features flex-container">
       <!-- Features -->
-      <div class="feature flex-container">
+      <div class="feature flex-container center-align-h">
         <div class="icon">
           <img src="/images/icon-access-anywhere.svg" alt="Access your files, anywhere">
         </div>
@@ -74,7 +74,7 @@
       </div><!-- ./ Feature -->
 
     <!-- Feature -->
-      <div class="feature flex-container">
+      <div class="feature flex-container center-align-h">
         <div class="icon">
           <img src="/images/icon-security.svg" alt="Security you can trust">
         </div>
@@ -88,7 +88,7 @@
       </div><!-- ./ Feature -->
 
       <!-- Feature -->
-      <div class="feature flex-container">
+      <div class="feature flex-container center-align-h">
         <div class="icon">
           <img src="/images/icon-collaboration.svg" alt="Real-time collaboration">
         </div>
@@ -102,7 +102,7 @@
       </div><!-- ./ Feature -->
 
       <!-- Feature -->
-      <div class="feature flex-container">
+      <div class="feature flex-container center-align-h">
         <div class="icon">
           <img src="/images/icon-any-file.svg" alt="Store any type of file">
         </div>
@@ -117,7 +117,7 @@
     </section><!-- ./ Features -->
 
     <!-- Stay Productive -->
-    <section class="productive flex-container">
+    <section class="productive flex-container center-align-h">
       <img alt="Stay productive, wherever you are"
            class="full-width"
            src="/images/illustration-stay-productive.png"  />
@@ -134,7 +134,7 @@
     </section><!-- ./ Stay Productive -->
 
     <!-- Testimonials -->
-    <section class="testimonials flex-container">
+    <section class="testimonials flex-container center-align-h">
       <!-- Testimonial -->
       <div class="testimonial">
         <p class="testimonial-text">
@@ -145,11 +145,13 @@
           <img alt="Satish Patel"
                class="circle"
                src="/images/profile-1.jpg" />
-          <div class="profile-name">
-              Satish Patel
-          </div>
-          <div class="profile-title">
-              Founder & CEO, Huddle
+          <div class="col">
+              <div class="profile-name">
+                  Satish Patel
+              </div>
+              <div class="profile-title">
+                  Founder & CEO, Huddle
+              </div>
           </div>
         </div>
       </div>
@@ -165,11 +167,13 @@
           <img alt="Bruce McKenzie"
                class="circle"
                src="/images/profile-2.jpg" />
-          <div class="profile-name">
-              Bruce McKenzie
-          </div>
-          <div class="profile-title">
-              Founder & CEO, Huddle
+          <div class="col">
+            <div class="profile-name">
+                Bruce McKenzie
+            </div>
+            <div class="profile-title">
+                Founder & CEO, Huddle
+            </div>
           </div>
         </div>
       </div>
@@ -185,32 +189,37 @@
           <img alt="Iva Boyd"
                class="circle"
                src="/images/profile-3.jpg" />
-          <div class="profile-name">
-              Iva Boyd
-          </div>
-          <div class="profile-title">
-              Founder & CEO, Huddle
-          </div>
+          <div class="col">
+            <div class="profile-name">
+                Iva Boyd
+            </div>
+            <div class="profile-title">
+                Founder & CEO, Huddle
+            </div>
+          </div>  
         </div>
       </div>
       <!-- ./ Testimonial -->
     </section><!-- ./ Testimonials -->
 
     <!-- Email Sign up Form -->
-    <form>
-      <fieldset>
-        <input
-          class="form-input"
-          place-holder="email@example.com"
-          required
-          type="email" />
-        <button
-          class="btn btn-cyan"
-          type="submit">
-          Get Started For Free
-        </button>
-      </fieldset>
-    </form><!-- Email Sign up Form -->
+    <section class="sign-up">
+        <form class="sign-up-form">
+            <fieldset>
+              <input
+                class="form-input"
+                placeholder="email@example.com"
+                required
+                type="email" />
+              <button
+                class="btn btn-cyan"
+                type="submit">
+                Get Started For Free
+              </button>
+            </fieldset>
+          </form>
+    </section><!-- Email Sign up Form -->
+    
 
     <!-- Footer -->
     <footer class="footer">
@@ -224,7 +233,6 @@
       <div class="footer-contact">
         <!-- Footer Nav Item -->
         <div class="footer-cell">
-          <div class="icon">
             <img 
               alt="Map Marker"
               src="/images/icon-location.svg" />
@@ -237,7 +245,6 @@
 
         <!-- Footer Nav Item -->
         <div class="footer-cell">
-          <div class="icon">
             <img 
               alt="Phone"
               src="/images/icon-phone.svg" />
@@ -251,7 +258,6 @@
 
         <!-- Footer Nav Item -->
         <div class="footer-cell">
-          <div class="icon">
             <img 
               alt="Phone"
               src="/images/icon-email.svg" />
