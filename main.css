@@ -2,14 +2,15 @@
 
 Table of Contents
 
-00 - Layout
-01 - Variables
+00 - Variables
+01 - Layout
+02 - Typography
+03 - Buttons
+04 - Helpers
 
 **/
 
-/* 00 - Layout */
-* { box-sizing: border-box; }
-/* 01 - Variables */
+/* 00 - Variables */
 :root {
   --dark-blue-400: hsl(217, 28%, 15%); /* Intro/Email */
   --dark-blue-500: hsl(218, 28%, 13%); /* Main bg */
@@ -22,6 +23,55 @@ Table of Contents
   --white: hsl(0, 0%, 100%);
   --font-family-body: 'Open Sans', sans-serif;
   --font-family-heading: 'Raleway', sans-serif;
+  --font-size-body: 14px;
   --font-weight-regular: 400;
   --font-weight-bold: 700;
 }
+
+/* 01 - Layout */
+* { box-sizing: border-box; }
+body {
+  background: var(--dark-blue-500);
+  font-size: var(--font-size-body);
+  height: 100vh;
+}
+.flex-container {
+  display: flex;
+  flex-direction: column;
+}
+.content-wrapper {
+  align-items: center;
+}
+.full-width {
+  width: 100%;
+}
+/* 01 - End Layout */
+/* 02 - Typography */
+html, body {
+  color: var(--white);
+  font-family: var(--font-family-body);
+  font-weight: var(--font-weight-regular);
+}
+strong { font-weight: var(--font-weight-bold); }
+h1, h2, h3, h4, h5, h6 { 
+  font-family: var(--font-family-heading); 
+  font-weight: var(--font-weight-bold);
+}
+.text-white {
+  color: var(--white);
+}
+/* 02 - End Typography */
+/* 03 - Buttons */
+.btn {
+  border-radius: 50%;
+}
+.btn-cyan {
+  background-color: var(--cyan);
+  color: white;
+}
+/* 03 - End Buttons */
+/* 04 - Helpers */
+.circle {
+  border-radius: 50%;
+}
+/* 04 - End Helpers */
